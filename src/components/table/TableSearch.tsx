@@ -1,8 +1,11 @@
+import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
 export default function TableSearch({ search, setSearch }) {
-	const searchFieldOnChangeHandler = e => {
+	const searchFieldOnChangeHandler = (
+		e: React.ChangeEventHandler<HTMLInputElement>
+	) => {
 		e.preventDefault();
 		setSearch(e.target.value);
 	};
