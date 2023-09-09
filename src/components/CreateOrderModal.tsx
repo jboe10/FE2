@@ -41,9 +41,9 @@ export default function CreateOrderModal() {
 			setOrderType(currentOrderContext.orderType);
 		}
 	}, [open, currentOrderContext]);
-	const createClickHandler = e => {};
+	const createClickHandler = (e: any) => {};
 
-	const formSubmitHandler = async e => {
+	const formSubmitHandler = async (e: any) => {
 		e.preventDefault();
 		const result = await create({
 			customerName,
@@ -52,10 +52,10 @@ export default function CreateOrderModal() {
 		});
 	};
 
-	const customerNameChangeHandler = e => {
+	const customerNameChangeHandler = (e: any) => {
 		setCustomerName(e.target.value);
 	};
-	const createdByUsernameChangeHandler = e => {
+	const createdByUsernameChangeHandler = (e: any) => {
 		setCreatedByUsername(e.target.value);
 	};
 

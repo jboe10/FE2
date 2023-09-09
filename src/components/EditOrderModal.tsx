@@ -44,10 +44,10 @@ export default function EditOrderModal({ open, setOpen, rowData = null }: any) {
 		});
 	};
 
-	const customerNameChangeHandler = e => {
+	const customerNameChangeHandler = (e: any) => {
 		setCustomerName(e.target.value);
 	};
-	const createdByUsernameChangeHandler = e => {
+	const createdByUsernameChangeHandler = (e: any) => {
 		setCreatedByUsername(e.target.value);
 	};
 

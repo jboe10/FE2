@@ -4,7 +4,11 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { OrderType } from '../api/OrderApi';
 
-export default function DropDown({ value, setValue, hasAllOption = false }) {
+export default function DropDown({
+	value,
+	setValue,
+	hasAllOption = false,
+}: any) {
 	const handleChange = (event: SelectChangeEvent) => {
 		setValue(event.target.value);
 	};
