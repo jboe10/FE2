@@ -41,7 +41,7 @@ export default function CreateOrderModal() {
 	// 		setOrderType(currentOrderContext.orderType);
 	// 	}
 	// }, [open, currentOrderContext]);
-	const createClickHandler = (e: any) => {};
+	// const createClickHandler = (e: any) => {};
 
 	const formSubmitHandler = async (e: any) => {
 		e.preventDefault();
