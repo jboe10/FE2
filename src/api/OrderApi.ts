@@ -34,11 +34,11 @@ export const getMany = async (type: OrderType | -1 = -1, name: string = '') => {
 	}
 };
 
-export const update = async order => {
+export const update = async (order: any) => {
 	const result = await axios.put(BACKEND_URI, order);
 	return result;
 };
-export const create = async order => {
+export const create = async (order: any) => {
 	const result = await axios.post(BACKEND_URI, order);
 	return result;
 	console.log(result);
