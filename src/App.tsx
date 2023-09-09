@@ -8,11 +8,11 @@ function App() {
 
 	return (
 		<>
-			<CreateOrderContext.Provider
+			{/* <CreateOrderContext.Provider
 				value={{ currentOrderContext, setCurrentOrderContext }}
 			>
 				<EnhancedTable />
-			</CreateOrderContext.Provider>
+			</CreateOrderContext.Provider> */}
 		</>
 	);
 }
