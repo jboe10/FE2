@@ -2,9 +2,9 @@ import axios from 'axios';
 import { Guid } from 'guid-typescript';
 const BACKEND_URI = 'https://red-backend1.azurewebsites.net/api/Order';
 
-const getOne = async (id: Guid) => {
-	const odrer = await axios.get(`${BACKEND_URI}?guid=${id}`);
-};
+// const getOne = async (id: Guid) => {
+// 	const odrer = await axios.get(`${BACKEND_URI}?guid=${id}`);
+// };
 
 export const deleteOne = async (id: Guid) => {
 	const response = await axios.delete(`${BACKEND_URI}/${id}`);
