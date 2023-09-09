@@ -18,10 +18,9 @@ const style = {
 	p: 4,
 };
 
-export default function EditOrderModal({ open, setOpen, rowData = null }) {
+export default function EditOrderModal({ open, setOpen, rowData = null }: any) {
 	const [customerName, setCustomerName] = React.useState('');
 	const [createdByUsername, setCreatedByUsername] = React.useState('');
-	const handleOpen = () => setOpen(true);
 	const handleClose = () => setOpen(false);
 	const [orderType, setOrderType] = React.useState(4);
 
@@ -31,10 +30,10 @@ export default function EditOrderModal({ open, setOpen, rowData = null }) {
 		}
 	}, [rowData]);
 
-	const formSubmitHandler = async e => {
+	const formSubmitHandler = async (e: any) => {
 		e.preventDefault();
 		setOpen(false);
-		const result = await update({
+		await update({
 			...rowData,
 			customerName: customerName !== '' ? customerName : rowData?.customerName,
 			createdByUserName:

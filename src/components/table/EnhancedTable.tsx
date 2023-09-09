@@ -43,7 +43,7 @@ export default function EnhancedTable() {
 		setCurrentRowData(params.row);
 	};
 	const handleDelete = async (params: GridRowParams) => {
-		const response = await deleteOne(params.row.id);
+		await deleteOne(params.row.id);
 	};
 
 	const columns: GridColDef[] = [
@@ -97,7 +97,7 @@ export default function EnhancedTable() {
 						value={orderFilter}
 						setValue={setOrderFilter}
 					/>
-					<TableSearch search={search} setSearch={setSearch} />
+					<TableSearch setSearch={setSearch} />
 					<Button
 						variant="contained"
 						sx={{ backgroundColor: '#DB3534' }}

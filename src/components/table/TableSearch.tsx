@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function TableSearch({ search, setSearch }) {
+export default function TableSearch({ setSearch }: any) {
 	const searchFieldOnChangeHandler = (
 		e: React.ChangeEvent<HTMLInputElement>
 	) => {
